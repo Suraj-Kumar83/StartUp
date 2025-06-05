@@ -9,7 +9,7 @@ require("./config/passport"); // <- Load passport config
 const cookieParser = require("cookie-parser");
 const authRoute = require("./Routes/AuthRoute");
 
-const { MONGO_URL, PORT } = process.env;
+const { MONGO_URL, PORT } = process.env || 8000;
 
 const app = express();
 
